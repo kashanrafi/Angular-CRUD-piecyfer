@@ -290,3 +290,9 @@
       visibility: hidden;
     }
   }
+  .tag{
+    color: white;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}

@@ -1,24 +1,18 @@
 <p>crud works!</p>
 <div class="container3">
     <form>
-    
-            <div >
-            <input  [(ngModel)]="username" name="username" class="form-control inp" type="text"
-                placeholder="Enter title" required>
-          
-                <br>
-                
-                <input  [(ngModel)]="email" name="email" class="form-control inp" type="text"
-                placeholder="Enter items" required>
-            
-            <br>
-            <button class="btn  btn-primary btn1" (click)="addItems()">Add Item</button>
-        </div>
+        <input [(ngModel)]="operation.username" name="username" class="form-control inp" type="text"
+            placeholder="Enter title" required>
+        <br>
+        <input [(ngModel)]="operation.email" name="email" class="form-control inp" type="text" placeholder="Enter Email"
+            required>
+        <br>
+        <button class="btn  btn-primary btn1" (click)="addItems()">Add Item</button>
     </form>
     <br>
 </div>
 <br><br>
-<div>UserName: {{ count$ | async }}</div>
+
 <!-- <br><br>
 <button id="increment" (click)="increment()">Increment</button>
 

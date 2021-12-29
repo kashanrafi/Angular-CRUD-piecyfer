@@ -1,0 +1,15 @@
+table tr td {
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+}
+h3{
+    text-align: center;
+}
+.btn1{
+    margin:5px;
+    
+    border-radius: 0;
+
+}

@@ -1,0 +1,18 @@
+<h3>show-list here!</h3>
+<div class="container1">
+    <table>
+        <tr>
+            <th>User Id</th>
+            <th>UserName</th>
+            <th>User Email</th>
+            <th colspan="2">Controls</th>
+        </tr>
+        <tr *ngFor="let operation of operations" >
+            <td>{{operation.id}}</td>
+            <td>{{operation.username}}</td>
+            <td>{{operation.email}}</td>
+           <td><button class="btn  btn-primary btn1">Edit</button></td>
+           <td><button class="btn  btn-primary btn1" (click)="deleteOperation(operation)">Delete</button></td>
+        </tr>
+    </table>
+</div>

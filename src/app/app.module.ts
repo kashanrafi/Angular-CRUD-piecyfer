@@ -7,11 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CrudComponent } from './crud/crud.component';
 import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './crud/store/crud.reducer';
+import { operationsReducer } from './common/reducer';
+import { ShowListComponent } from './show-list/show-list.component';
+// import { counterReducer } from './crud/store/crud.reducer';
 @NgModule({
   declarations: [
     AppComponent,
-    CrudComponent
+    CrudComponent,
+    ShowListComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import { counterReducer } from './crud/store/crud.reducer';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({ operations: operationsReducer }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
